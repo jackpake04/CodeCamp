@@ -2,44 +2,57 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="CCsurveycert.css" />
   </head>
   
   <body>
+    <div class="whole"></div>
     <h1 id="title">freeCodeCamp Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <div class="form-frame">
     <form id="survey-form">
       <fieldset>
-        <label id="name-label" >Name<input id="name" required placeholder="Enter your name" type="text"></label>
-        <label id="email-label" >Email<input placeholder="Enter your Email" id="email" required type="email"></label>
-        <label id="number-label" >Age(optional)<input placeholder="Age" id="number" type="number" min="10" max="99"></label>
-        <label>Which option best describes your current role?<select id="dropdown">
+        <label for="name" id="name-label" >Name</label><input id="name" required placeholder="Enter your name" type="text">
+        </fieldset>
+        <fieldset>
+        <label for="email" id="email-label" >Email</label><input placeholder="Enter your Email" id="email" required type="email">
+        </fieldset>
+        <fieldset>
+        <label for="number" id="number-label" >Age(optional)</label><input placeholder="Age" id="number" type="number" min="10" max="99">
+        </fieldset>
+        <fieldset>
           <option value="">Select Current Role</option>
           <option value="1">Student</option>
           <option value="2">Full Time Job</option>
           <option value="3">Full Time Learner</option>
           <option value="4">Prefer not to say</option>
           <option value="5">Other</option></select>
-        <legend>Would you recommend freeCodeCamp to a friend?</legend>
+        </fieldset>
+        <fieldset>
+        <label>Would you recommend freeCodeCamp to a friend?</label>
         <label for="Definitely">
           <input id="Definitely" name="recommend" type="radio" class="inline" value="recommend" checked/>Definitely
         </label>
         <label for="Maybe">
           <input id="Maybe" name="recommend" type="radio" class="inline" value="recommend"/>Maybe
-          </label>
+        </label>
         <label for="Not Sure">
           <input id="Not Sure" name="recommend" type="radio" class="inline" value="recommend"/>Not Sure
         </label>
+        </fieldset>
+        <fieldset>
         <label id="checkbox">What have you been learning?<input type="checkbox" class="inline" value="HTML"/>HTML
         <input type="checkbox" class="inline" value="CSS"/>CSS
-        <input type="checkbox" class="inline" value="JS">JAVASCRIPT
+        <input type="checkbox" class="inline" value="JS"/>JAVASCRIPT
         <input type="checkbox" class="inline" value="PYTHON"/>PYTHON
-        <input type="checkbox" class="inline"/ value="OTHER">OTHER
+        <input type="checkbox" class="inline" value="OTHER"/>OTHER
         </label>
+        </fieldset>
         <label for="AnyQs">Any Questions?
           <textarea id="AnyQs" name="AnyQs" placeholder="Type here..." rows="4" cols="40"></textarea>
         <input type="submit" value="Submit" id="submit" />
         </label>
-      </fieldset>
     </form>
+  </div>
+  </div>
   </body>
