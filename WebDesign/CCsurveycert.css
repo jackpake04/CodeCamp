@@ -14,3 +14,37 @@ h1{
   margin: 10%
   text-align: center;
 }
+.whole{
+    border: none;
+    display: inline-block;
+}
+.form-frame{
+    border: none;
+    background-color: #ffeeff;
+    width: 90%;
+    padding: .25rem;
+    max-width: 550px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+fieldset{
+    border: none;
+    margin: 0 auto 20px auto;
+}
+input,textarea,dropdown,select{
+    margin: auto 1rem 0 1rem;
+    padding: .2rem;
+    display: block;
+}
+label{
+    display: block;
+    text-align: left;
+    margin: 0 .2rem .3rem 1rem;
+    padding: .2rem;
+}
+input[type="submit"]{
+    margin: 1rem;
+    width: 70%;
+    color: black;
+}
