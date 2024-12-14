@@ -19,7 +19,7 @@ h1{
     display: inline-block;
 }
 .form-frame{
-    border: none;
+    border: 2px solid black;
     background-color: #ffeeff;
     width: 90%;
     padding: .25rem;
@@ -29,7 +29,10 @@ h1{
     padding-bottom: 2em;
 }
 fieldset{
-    border: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
     margin: 0 auto 20px auto;
 }
 input,textarea,dropdown,select{
@@ -44,7 +47,19 @@ label{
     padding: .2rem;
 }
 input[type="submit"]{
-    margin: 1rem;
+    margin: 2rem auto auto 4rem;
     width: 70%;
     color: black;
+}
+fieldset:last-of-type{
+    border: none;
+}
+form{
+    margin: 0 auto;
+}
+.inline{
+    margin: 0 0 0 0;
+    display: block;
+    padding: 1rem;
+    width: unset;
 }
